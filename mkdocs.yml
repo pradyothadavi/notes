@@ -1,7 +1,7 @@
 site_name: Notes
 site_url: https://github.com/pradyothadavi/notes
 site_description: Github repository for notes on various topics
-repo_url: https://github.com/pradyothadavi/notes
+repo_url: https://pradyothadavi.github.io/notes/
 site_author: Pradyot H Adavi
 copyright: Copyright &copy; 2020 - 2021 Pradyot H Adavi
 
@@ -19,7 +19,7 @@ theme:
 
 plugins:
   - search # necessary for search to work
-  - awesome-page
+  # - awesome-page
 
 nav:
   - Home: index.md
@@ -51,9 +51,9 @@ markdown_extensions:
   - pymdownx.caret
   - pymdownx.critic
   - pymdownx.details
-  - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+  # - pymdownx.emoji:
+  #     emoji_index: !!python/name:materialx.emoji.twemoji
+  #     emoji_generator: !!python/name:materialx.emoji.to_svg
   # - pymdownx.highlight:
   #     linenums_style: pymdownx-inline
   - pymdownx.inlinehilite
@@ -67,7 +67,7 @@ markdown_extensions:
   - pymdownx.snippets:
       check_paths: true
   - pymdownx.superfences
-  - pymdownx.tabbed
+  # - pymdownx.tabbed
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
