@@ -1,0 +1,73 @@
+site_name: Notes
+site_url: https://github.com/pradyothadavi/notes
+site_description: Github repository for notes on various topics
+repo_url: https://github.com/pradyothadavi/notes
+site_author: Pradyot H Adavi
+copyright: Copyright &copy; 2020 - 2021 Pradyot H Adavi
+
+theme:
+  name: material
+  language: en
+  features:
+    - tabs
+  palette:
+    primary: 'cyan'
+    accent: 'cyan'
+    font:
+      text: 'Proxima Nova'
+      code: 'Proxima Nova'
+
+plugins:
+  - search # necessary for search to work
+  - awesome-page
+
+nav:
+  - Home: index.md
+  - API Design:
+    - Process: api_design/process.md
+    - General Principles: api_design/general_principles.md
+    - Class Design: api_design/design_classes.md
+  - DDIA Notes:
+    - Chapter 01: ddia_notes/ch-01.md
+    - Chapter 02: ddia_notes/ch-02.md
+  - Kubernetes:
+    - Introduction: kubernetes/intro.md
+  - Protocol Buffer: 
+    - Enums: protocol_buffers/enums.md
+
+markdown_extensions:
+  - markdown.extensions.admonition
+  - markdown.extensions.attr_list
+  - markdown.extensions.codehilite:
+      guess_lang: false
+  - markdown.extensions.def_list
+  - markdown.extensions.footnotes
+  - markdown.extensions.meta
+  - markdown.extensions.toc:
+      permalink: true
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  # - pymdownx.highlight:
+  #     linenums_style: pymdownx-inline
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets:
+      check_paths: true
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
