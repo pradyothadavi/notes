@@ -34,6 +34,13 @@ nav:
     - Introduction: kubernetes/intro.md
   - Protocol Buffer: 
     - Enums: protocol_buffers/enums.md
+  - Zookeeper:
+    - Introduction: zookeeper/intro.md
+  - HBase:
+    - Installation: hbase/installation.md
+    - Introduction: hbase/definitive_guide.md
+    - HBase Application: hbase/hbase_application.md
+    - Client API Basic: hbase/client_api_basic.md 
 
 markdown_extensions:
   - markdown.extensions.admonition
