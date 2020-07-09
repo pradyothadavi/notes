@@ -13,7 +13,7 @@
         <meta name="description" content="Github repository for notes on various topics">
       
       
-        <link rel="canonical" href="https://github.com/pradyothadavi/notes/ddia_notes/ch-02/">
+        <link rel="canonical" href="https://github.com/pradyothadavi/notes/hbase/hbase_application/">
       
       
         <meta name="author" content="Pradyot H Adavi">
@@ -42,7 +42,7 @@
     
     
       
-        <title>Chapter 02 - Notes</title>
+        <title>HBase Application - Notes</title>
       
     
     
@@ -91,7 +91,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#chapter-02" tabindex="1" class="md-skip">
+      <a href="#hbase" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -117,7 +117,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                Chapter 02
+                HBase Application
               
             </span>
           
@@ -298,12 +298,10 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
     
     <label class="md-nav__link" for="nav-3">
       DDIA Notes
@@ -321,7 +319,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../ch-01/" title="Chapter 01" class="md-nav__link">
+    <a href="../../ddia_notes/ch-01/" title="Chapter 01" class="md-nav__link">
       Chapter 01
     </a>
   </li>
@@ -331,20 +329,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-    <a href="./" title="Chapter 02" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../../ddia_notes/ch-02/" title="Chapter 02" class="md-nav__link">
       Chapter 02
     </a>
-    
   </li>
 
         
@@ -465,10 +454,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7" checked>
     
     <label class="md-nav__link" for="nav-7">
       HBase
@@ -486,7 +477,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../hbase/installation/" title="Installation" class="md-nav__link">
+    <a href="../installation/" title="Installation" class="md-nav__link">
       Installation
     </a>
   </li>
@@ -498,7 +489,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../hbase/definitive_guide/" title="Introduction" class="md-nav__link">
+    <a href="../definitive_guide/" title="Introduction" class="md-nav__link">
       Introduction
     </a>
   </li>
@@ -508,11 +499,82 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../../hbase/hbase_application/" title="HBase Application" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        HBase Application
+      </label>
+    
+    <a href="./" title="HBase Application" class="md-nav__link md-nav__link--active">
       HBase Application
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#hbase-principles" class="md-nav__link">
+    HBase Principles
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#table-format" class="md-nav__link">
+    Table Format
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#table-layout" class="md-nav__link">
+    Table Layout
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#table-storage" class="md-nav__link">
+    Table Storage
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -522,7 +584,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../hbase/client_api_basic/" title="Client API Basic" class="md-nav__link">
+    <a href="../client_api_basic/" title="Client API Basic" class="md-nav__link">
       Client API Basic
     </a>
   </li>
@@ -550,6 +612,55 @@
     
   
   
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#hbase-principles" class="md-nav__link">
+    HBase Principles
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#table-format" class="md-nav__link">
+    Table Format
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#table-layout" class="md-nav__link">
+    Table Layout
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#table-storage" class="md-nav__link">
+    Table Storage
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -561,13 +672,61 @@
               
                 
                 
-                <h1 id="chapter-02">Chapter 02<a class="headerlink" href="#chapter-02" title="Permanent link">&para;</a></h1>
-<p>Each layer hides the complexity of the layers below it by providing a clean data model.</p>
-<p>Data model has such a profound effect on what the software above it can and can’t do, it’s important to choose one
- that is appropriate to the application.</p>
-<p>## Relational Model
- Data is organized into relations (called tables in SQL), where each relation is an unordered collection of tuples
-  (rows in SQL).</p>
+                <h1 id="hbase">HBase<a class="headerlink" href="#hbase" title="Permanent link">&para;</a></h1>
+<p>HBase is a Java-based, open source, NoSQL, non-relational, column-oriented, distributed database built on top of the Hadoop Distributed Filesystem (HDFS), modeled after Google’s BigTable paper.</p>
+<p>HBase was designed with availability over consistency and offers high availability of all its services with a fast and automatic failover.</p>
+<p>The ability to allow creation and usage of a flexible data model.</p>
+<p>In a column-oriented database, the system stores data tables as sparse columns of data rather than as entire rows of data.</p>
+<h2 id="hbase-principles">HBase Principles<a class="headerlink" href="#hbase-principles" title="Permanent link">&para;</a></h2>
+<h3 id="table-format">Table Format<a class="headerlink" href="#table-format" title="Permanent link">&para;</a></h3>
+<p>In HBase, you will find two different types of tables: the system tables and the user tables.Systems tables are used internally by HBase to keep track of meta information like the table’s access control lists (ACLs), metadata for the tables and regions, namespaces, and so on.There should be no need for you to look at those tables.User tables are what you will create for your use cases.They will belong to the default namespace unless you create and use a specific one.</p>
+<h4 id="table-layout">Table Layout<a class="headerlink" href="#table-layout" title="Permanent link">&para;</a></h4>
+<p>The HBase world uses many different words to describe different parts: rows, columns, keys, cells, values, KeyValues, timestamps, and more.To make sure we talk about the same thing, here is a clarification: a row is formed of multiple columns, all referenced by the same key.A specific column and a key are called a cell.It is possible to have multiple versions of the same cell, all differentiated by the timestamp.A cell can also be called a KeyValue pair.So a row, referenced by a key, is formed of a group of cells, each being a specific column for the given row.</p>
+<p>column families need to be defined at the table creation, there is no need to define the column names in advance.</p>
+<p>To allow a faster lookup access, keys and columns are alphabetically sorted within a table but also in memory.</p>
+<p>HBase orders the keys based on the byte values, so “AA” will come before “BB”. If you store numbers as character chains, keep in mind that “1234” will come before “9”. If you have to store numbers, then to save on space and to keep the ordering, you will need to store their byte representation. In this model, the integer 1234 will be stored as 0x00 0x00 0x04 0xD2, while 9 will be 0x00 0x00 0x00 0x09. Sorting those two values, we can see that 0x00 0x00 0x00 0x09 will come before 0x00 0x00 0x04 0xD2.</p>
+<p>Because they will be used to create files and directories in the filesystem, the table name and the column family names need to use only printable characters.</p>
+<h4 id="table-storage">Table Storage<a class="headerlink" href="#table-storage" title="Permanent link">&para;</a></h4>
+<p>On a RegionServer, you will have as many memstores as you have regions multiplied by the number of column families receiving writes, all sharing the same reserved memory area.</p>
+<ul>
+<li><strong>RegionServer</strong></li>
+</ul>
+<p>Each region will have a start key and an end key that will define its boundaries.All this information will be stored within the files into the region but also into the hbase:meta table.</p>
+<ul>
+<li><strong>Column Family</strong></li>
+</ul>
+<p>A column family is an HBase-specific concept that you will not find in other RDBMS applications.</p>
+<p>The write cache memory area for a given RegionServer is shared by all the column families configured for all the regions hosted by the given host. Abusing column families will put pressure on the memstore, which will generate many small files, which in turn will generate a lot of compactions that might impact the performance. There is no technical limitation on the number of column families you can configure for a table. However, over the last three years, most of the use cases we had the chance to work on only required a single column family. Some required two column families, but each time we have seen more than two column families, it has been possible and recommended to reduce the number to improve efficiency. If your design includes more than three column families, you might want to take a deeper look at it and see if all those families are really required; most likely, they can be regrouped. If you do not have any consistency constraints between your two columns families and data will arrive into them at a different time, instead of creating two column families for a single table, you can also create two tables, each with a single column family. This strategy is useful when it comes time to decide the size of the regions. Indeed, while it was better to keep the two column families almost the same size, by splitting them accross two different tables, it is now easier to let me grow independently.</p>
+<ul>
+<li><strong>Stores</strong></li>
+</ul>
+<p>A store object regroups one memstore and zero or more store files (called HFiles). This is the entity that will store all the information written into the table and will also be used when data needs to be read from the table.</p>
+<ul>
+<li><strong>HFiles</strong></li>
+</ul>
+<p>HFiles are created when the memstores are full and must be flushed to disk. HFiles are eventually compacted together over time into bigger files. They are the HBase file format used to store table data. HFiles are composed of different types of blocks (e.g., index blocks and data blocks). HFiles are stored in HDFS, so they benefit from Hadoop persistence and replication.</p>
+<ul>
+<li><strong>Blocks</strong></li>
+</ul>
+<p>HFile blocks are usually between 8 KB and 1 MB, but the default size is 64 KB.</p>
+<p>Different blocks are</p>
+<ul>
+<li>Data block</li>
+<li>Index block</li>
+<li>Bloom filter block</li>
+<li>
+<p>Trailer block</p>
+</li>
+<li>
+<p><strong>Cells</strong></p>
+</li>
+</ul>
+<p>The “key type” field represents the different possible HBase operations</p>
+<p>The maximum length for the row key plus the column family and the column qualifier is stored as four bytes and is 2^31 – 1 – 12 or, 2,147,483,635 (key length).</p>
+<p>The maximum length for the value is stored as four bytes and is 2^31 – 1 or 2,147,483,647 (value length).</p>
+<p>The maximum length for the row key is stored as two signed bytes and is 32,767 (row length).</p>
+<p>Because it is stored in one signed byte, the maximum length for the column family is 127 (CF length).</p>
+<p>The maximum length for all the tags together is stored as two bytes and is 65,535 (tags length).</p>
                 
                   
                 
@@ -588,7 +747,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../ch-01/" title="Chapter 01" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../definitive_guide/" title="Introduction" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -597,19 +756,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Chapter 01
+                Introduction
               </span>
             </div>
           </a>
         
         
-          <a href="../../kubernetes/intro/" title="Introduction" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../client_api_basic/" title="Client API Basic" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Introduction
+                Client API Basic
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
